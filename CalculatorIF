@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace testt
+{
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int x, y;
+            string arithmeticOperation;
+
+            Console.Write("Put here +,-,*,/: ");
+            arithmeticOperation = Console.ReadLine();
+            Console.Write("Number x: ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Number y: ");
+            y = Convert.ToInt32(Console.ReadLine());
+
+            if (arithmeticOperation == "+")
+            {
+                Console.WriteLine(x + y);
+            }
+            if (arithmeticOperation == "-")
+            {
+                Console.WriteLine(x - y);
+            }
+            if (arithmeticOperation == "*")
+            {
+                Console.WriteLine(x * y);
+            }
+            if (arithmeticOperation == "/")
+            {
+                Console.WriteLine(x / y);
+            }
+        }
+    }
+}
