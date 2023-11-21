@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSharpLight
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            float x;
+            int y;
+            string arithmeticalOperation;
+
+            Console.Write("X: ");
+            x = Convert.ToSingle(Console.ReadLine());
+            Console.Write("Y: ");
+            y = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Arithmecal operation: ");
+            arithmeticalOperation = Console.ReadLine();
+
+            switch (arithmeticalOperation)
+            {
+                case "+":
+                    Console.WriteLine(x + y);
+                    break;
+                case "-":
+                    Console.WriteLine(x - y);
+                    break;
+                case "*":
+                    Console.WriteLine(x * y);
+                    break;
+                case "/":
+                    Console.WriteLine(x / y);
+                    break;
+            }
+        }
+    } 
+
+}
